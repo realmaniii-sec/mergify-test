@@ -1,0 +1,11 @@
+queue_rules:
+  - name: default
+    queue_conditions:
+      - author=realmaniii-sec
+    merge_method: squash
+pull_request_rules:
+  - name: default automerge
+    conditions:
+      - base=main
+    actions:
+      queue:
